@@ -5,5 +5,7 @@ fn main() {
     let a = 100.0;
     let b: bool = true;
     let c: (u32, u32, u8, f64, bool) = (x, y, z, a, b);
-    println!("c = {:?}", c);
+    let (_, _, _, d, _) = c;
+    let e = c.3;
+    println!("e == d == {}", e == d);
 }
