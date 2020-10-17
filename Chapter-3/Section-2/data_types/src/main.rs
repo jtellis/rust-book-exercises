@@ -8,4 +8,14 @@ fn main() {
     let (_, _, _, d, _) = c;
     let e = c.3;
     println!("e == d == {}", e == d);
+
+    /* Array type */
+
+    let weekdays = ["Mon", "Tues", "Weds", "Thurs", "Fri"];
+
+    let arr: [u32; 5];
+
+    let arr2 = [1; 5]; /* [1, 1, 1, 1, 1] */
+
+    let one = arr2[4];
 }
